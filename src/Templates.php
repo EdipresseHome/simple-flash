@@ -8,7 +8,7 @@ namespace Tamtamchik\SimpleFlash;
  */
 class Templates
 {
-    const BASE = 'bootstrap';
+    const BASE = 'bootstrapExtended';
     const BOOTSTRAP = 'bootstrap';
     const FOUNDATION = 'foundation';
     const BULMA = 'bulma';

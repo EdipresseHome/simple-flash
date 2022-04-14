@@ -17,6 +17,7 @@ class Engine
         'warning',
         'info',
         'success',
+        'default',
     ];
 
     private $template;
@@ -38,7 +39,7 @@ class Engine
     /**
      * Base method for adding messages to flash.
      *
-     * @param string $message - message text
+     * @param string|array $message - message text
      * @param string $type - message type: success, info, warning, error
      *
      * @return Engine $this
@@ -223,6 +224,18 @@ class Engine
     public function success($message)
     {
         return $this->message($message, 'success');
+    }
+
+    /**
+     * Shortcut for default message.
+     *
+     * @param $message - message text
+     *
+     * @return Engine $this
+     */
+    public function default($message)
+    {
+        return $this->message($message, 'default');
     }
 
     /**
