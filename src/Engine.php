@@ -17,7 +17,7 @@ class Engine
         'warning',
         'info',
         'success',
-        'default',
+        'primary',
     ];
 
     private $template;
@@ -227,15 +227,15 @@ class Engine
     }
 
     /**
-     * Shortcut for default message.
+     * Shortcut for primary message.
      *
      * @param $message - message text
      *
      * @return Engine $this
      */
-    public function default($message)
+    public function primary($message)
     {
-        return $this->message($message, 'default');
+        return $this->message($message, 'primary');
     }
 
     /**

@@ -28,6 +28,6 @@ class BootstrapExtendedTemplate extends BaseTemplate implements TemplateInterfac
         $type = ($type == 'error') ? 'danger' : $type;
         $type = ($type == 'default') ? 'primary' : $type;
 
-        return sprintf($this->getWrapper(), $type, $messages);
+        return sprintf($this->getWrapper(), $type, $type, $messages);
     }
 }
