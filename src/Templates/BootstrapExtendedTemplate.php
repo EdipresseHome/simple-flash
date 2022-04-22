@@ -13,7 +13,7 @@ class BootstrapExtendedTemplate extends BaseTemplate implements TemplateInterfac
 {
     protected $prefix = '';
     protected $postfix = '<br />';
-    protected $wrapper = '<div class="alert alert-%s alert-dismissible fade show" role="alert"><div class="alert-icon alert-icon-%s"></div>%s <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><div class="alert-close"></div></span></button></div>';
+    protected $wrapper = '<div class="alert alert-%s alert-dismissible fade show" role="alert"><div class="alert-icon alert-icon-%s"></div><p>%s</p> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><div class="alert-close"></div></span></button></div>';
 
     /**
      * Override base function to suite Bootstrap 3 alert naming.
