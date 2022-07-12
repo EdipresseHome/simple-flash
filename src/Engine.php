@@ -77,7 +77,7 @@ class Engine
             $_SESSION[$this->key][$type] = [];
         }
 
-        $_SESSION[$this->key][$type][] = $message;
+        $_SESSION[$this->key][$type][md5($message)] = $message;
 
         return $this;
     }
